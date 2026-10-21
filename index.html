@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#171b3b">
+<title>Para a Jennifer, com carinho ♡</title>
+<style>
+:root{
+  --night:#151a38;--night2:#20294f;--pink:#f6bfd5;--rose:#d979a8;
+  --cream:#fff0f3;--ink:#29345f;--lav:#d9d4ff;--white:#fffafc;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.75}
+a{color:inherit}
+.topbar{position:sticky;top:0;z-index:10;background:rgba(21,26,56,.96);color:#fce4f0;display:flex;align-items:center;justify-content:space-between;padding:12px clamp(16px,4vw,48px);gap:18px;border-bottom:1px solid #ffffff25;backdrop-filter:blur(12px)}
+.brand{font-style:italic;font-size:clamp(15px,2vw,20px);text-decoration:none}
+.brand span{font-style:normal;margin-right:8px}
+nav{display:flex;gap:clamp(10px,2.2vw,28px);font:12px Arial,sans-serif}
+nav a{text-decoration:none;opacity:.86}nav a:hover{color:var(--pink);opacity:1}
+.hero{min-height:440px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 18% 55%,#6f4d72 0,#302d59 35%,#11152d 78%);color:#fff0f7;display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:clamp(28px,6vw,80px);gap:35px}
+.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 10% 20%,#ffd7e733 0 2px,transparent 3px),radial-gradient(circle at 76% 18%,#fff 0 1px,transparent 2px),radial-gradient(circle at 90% 75%,#fff 0 1px,transparent 2px);background-size:110px 95px,130px 120px,90px 110px;pointer-events:none}
+.hero-art{position:relative;display:flex;align-items:center;justify-content:center;min-height:300px}
+.gift-scene{position:relative;width:min(100%,420px);height:300px;border-radius:48% 52% 28% 32%;background:linear-gradient(145deg,#e8a6c6aa,#4c416e99);box-shadow:inset 0 0 60px #fbd8ee35,0 20px 50px #0004;display:flex;align-items:center;justify-content:center}
+.teddy{font-size:clamp(115px,17vw,180px);filter:drop-shadow(0 15px 10px #120e2b66);animation:float 4s ease-in-out infinite;z-index:2}
+.choco{position:absolute;right:5%;bottom:10%;font-size:76px;transform:rotate(10deg);filter:drop-shadow(0 8px 6px #0005)}
+.heart-plush{position:absolute;left:15%;bottom:9%;font-size:57px;transform:rotate(-12deg);filter:drop-shadow(0 6px 4px #0004)}
+.ribbon{position:absolute;width:150px;height:28px;background:#f2a9ca;bottom:3%;right:25%;transform:rotate(-9deg);border-radius:5px;box-shadow:0 5px 9px #0003}
+.ribbon:before,.ribbon:after{content:"";position:absolute;width:52px;height:38px;border:8px solid #f2a9ca;border-radius:50%;top:-7px}
+.ribbon:before{left:-25px;transform:rotate(25deg)}.ribbon:after{right:-25px;transform:rotate(-25deg)}
+.spark{position:absolute;color:#ffd9ee;font-size:27px;animation:twinkle 2.5s ease-in-out infinite}.s1{top:4%;left:8%}.s2{right:7%;top:12%;animation-delay:.7s}.s3{right:11%;bottom:12%;animation-delay:1.2s}
+.hero-copy{position:relative;z-index:1;max-width:540px}
+.eyebrow{font:11px Arial,sans-serif;letter-spacing:3px;text-transform:uppercase;color:#e9b9d8}
+h1,h2,h3{line-height:1.2}h1{font-size:clamp(34px,5vw,56px);font-weight:normal;font-style:italic;color:#f7b9d6;margin:10px 0 20px}
+.hero p{font:16px/1.8 Arial,sans-serif;max-width:510px;color:#f9eaf2}
+.btn{display:inline-flex;align-items:center;gap:10px;border:0;border-radius:30px;padding:14px 24px;background:linear-gradient(100deg,#f4b4d0,#f38bb9);color:#282047;text-decoration:none;font: bold 14px Arial,sans-serif;box-shadow:0 8px 22px #05081955;transition:transform .2s,filter .2s;cursor:pointer;margin-top:12px}
+.btn:hover{transform:translateY(-3px);filter:brightness(1.05)}
+section{scroll-margin-top:80px}
+.story{display:grid;grid-template-columns:1fr 1fr;min-height:320px;align-items:stretch}
+.story:nth-of-type(even){background:#ffedf2}
+.story.dark{background:linear-gradient(120deg,#1a2144,#25335f);color:#f9e8f3}
+.story-copy{padding:clamp(26px,5vw,58px);display:flex;flex-direction:column;justify-content:center}
+.num{font:12px Arial,sans-serif;letter-spacing:3px;color:var(--rose);text-transform:uppercase}
+.dark .num{color:#f4acd0}
+h2{font-size:clamp(26px,3.5vw,38px);font-weight:normal;font-style:italic;margin:9px 0 18px;color:#26315e}
+.dark h2{color:#f8c6df}
+.story p{font-size:17px;margin:0 0 15px}
+.story-art{min-height:280px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;background:radial-gradient(ellipse at center,#f8c8df 0,#e7a9c8 45%,#b579a5 100%)}
+.story-art.night{background:radial-gradient(ellipse at 50% 70%,#596497 0,#26345f 50%,#141a38 100%)}
+.story-art.flowers{background:radial-gradient(ellipse at center,#ffe2ec,#e8abc7 62%,#bc82b1)}
+.art-emoji{font-size:clamp(100px,15vw,160px);filter:drop-shadow(0 15px 10px #28183a55);animation:float 5s ease-in-out infinite;position:relative;z-index:1}
+.art-caption{position:absolute;bottom:18px;right:20px;background:#fff0f3e8;padding:9px 15px;border-radius:14px;font-style:italic;max-width:170px;text-align:center;font-size:14px;color:#6b3d72;box-shadow:0 5px 20px #32172d22}
+.stars{position:absolute;inset:0;color:#fff0fa;font-size:22px;letter-spacing:28px;line-height:3}
+.gift-section{padding:60px 22px;background:#fff5f7;text-align:center}
+.section-title{font-size:clamp(29px,4vw,42px);font-style:italic;font-weight:normal;margin:0 0 8px}
+.section-sub{font:14px/1.7 Arial,sans-serif;max-width:620px;margin:0 auto 28px;color:#6c6683}
+.gifts{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:980px;margin:auto}
+.gift-card{border:1px solid #f1c9dc;background:#fffafc;border-radius:22px;padding:25px 20px;box-shadow:0 12px 30px #7d477b12;transition:transform .25s;cursor:pointer;text-align:center;color:var(--ink)}
+.gift-card:hover{transform:translateY(-5px)}.gift-card .emoji{font-size:62px;display:block;margin-bottom:12px}
+.gift-card h3{font-size:23px;font-weight:normal;font-style:italic;margin:0 0 8px}
+.gift-card p{font:13px/1.6 Arial,sans-serif;margin:0;color:#66617c}
+.gift-card .reveal{display:none;margin-top:15px;padding-top:13px;border-top:1px dashed #e4a9c8;font-size:15px;font-style:italic}
+.gift-card.open .reveal{display:block;animation:fade .45s ease}
+.letter-wrap{padding:clamp(28px,7vw,80px) 18px;background:radial-gradient(ellipse at top,#35416e,#151a38 70%);color:#fff0f7}
+.letter{max-width:900px;margin:auto;background:#fff1f4;color:#30375d;border-radius:7px;padding:clamp(25px,6vw,65px);box-shadow:0 20px 55px #080c25aa;position:relative;border:1px solid #eab9d0}
+.letter:before{content:"";position:absolute;inset:9px;border:1px solid #edc4d6;pointer-events:none}
+.letter h2{text-align:center;font-size:clamp(30px,4vw,44px);margin:0 0 28px;position:relative}
+.letter p{font-size:17px;position:relative;margin:0 0 17px}
+.signature{text-align:right;font-style:italic;font-size:24px!important;color:#a64f86;margin-top:30px!important}
+.letter-end{text-align:center;margin-top:22px;font:12px Arial,sans-serif;letter-spacing:2px;color:#a05c8b}
+footer{text-align:center;background:#151a38;color:#e8c4da;padding:22px;font-size:14px}
+#toast{position:fixed;bottom:20px;left:50%;transform:translate(-50%,20px);background:#fff0f6;color:#42264f;border-radius:22px;padding:12px 20px;box-shadow:0 10px 30px #0004;opacity:0;pointer-events:none;transition:.3s;z-index:20;font:14px Arial,sans-serif}
+#toast.show{opacity:1;transform:translate(-50%,0)}
+@keyframes float{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-12px) rotate(2deg)}}
+@keyframes twinkle{0%,100%{opacity:.55;transform:scale(.85)}50%{opacity:1;transform:scale(1.15)}}
+@keyframes fade{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:760px){
+ .topbar{align-items:flex-start;flex-direction:column;padding:12px 16px;gap:8px}nav{width:100%;justify-content:space-between;gap:8px;font-size:11px}
+ .hero{grid-template-columns:1fr;padding:32px 22px 42px;gap:18px}.hero-art{min-height:230px;order:2}.gift-scene{height:225px}.hero-copy{order:1}
+ .story{grid-template-columns:1fr}.story-art{min-height:230px}.story:nth-of-type(even) .story-art{order:-1}
+ .gifts{grid-template-columns:1fr}.gift-card{max-width:450px;width:100%;margin:auto}
+ .story p,.letter p{font-size:16px}
+}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#inicio"><span>🧸</span> Para a menina que faz tudo mais bonito ♡</a>
+  <nav aria-label="Navegação principal">
+    <a href="#inicio">Início</a><a href="#presentes">Presentes</a><a href="#reflexoes">Reflexões</a><a href="#carta">A carta</a><a href="#carta" aria-label="Ir para a carta">♥</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="hero-art" aria-label="Ilustração de ursinho, coração e chocolates">
+    <div class="gift-scene"><span class="spark s1">✧</span><span class="spark s2">✦</span><span class="spark s3">✧</span><span class="teddy">🧸</span><span class="heart-plush">💗</span><span class="choco">🍫</span><span class="ribbon"></span></div>
+  </div>
+  <div class="hero-copy">
+    <div class="eyebrow">Uma cartinha feita com carinho</div>
+    <h1>Feliz 20 anos, meu bem!</h1>
+    <p>Hoje você completa 20 anos. E, em vez de te dar apenas mais uma mensagem de aniversário, quero compartilhar algo que espero que você leve consigo por muitos anos.</p>
+    <a class="btn" href="#presentes">♥ &nbsp; Abrir seus presentinhos</a>
+  </div>
+</section>
+
+<section class="gift-section" id="presentes">
+  <div class="eyebrow">Pequenos presentes, grandes significados</div>
+  <h2 class="section-title">Escolha um presentinho ♡</h2>
+  <p class="section-sub">Cada um guarda um lembrete. Clique nos presentes e descubra a mensagem escondida neles.</p>
+  <div class="gifts">
+    <button class="gift-card" type="button" aria-expanded="false">
+      <span class="emoji">🧸</span><h3>Um abraço quentinho</h3><p>Para os dias em que você precisar de acolhimento.</p>
+      <span class="reveal">Você também merece cuidado, descanso e carinho. Não precisa ser forte em todos os momentos para ser admirável.</span>
+    </button>
+    <button class="gift-card" type="button" aria-expanded="false">
+      <span class="emoji">🍫</span><h3>Um chocolate doce</h3><p>Para não esquecer das pequenas alegrias.</p>
+      <span class="reveal">Que você nunca fique tão ocupada tentando construir o amanhã a ponto de deixar de saborear as coisas boas que existem hoje.</span>
+    </button>
+    <button class="gift-card" type="button" aria-expanded="false">
+      <span class="emoji">🐉</span><h3>Um dragão corajoso</h3><p>Para acompanhar você nas novas fases.</p>
+      <span class="reveal">Coragem não é nunca sentir medo. É seguir descobrindo o caminho, respeitando seu tempo e lembrando da força que já existe em você.</span>
+    </button>
+  </div>
+</section>
+
+<section class="story" id="reflexoes">
+  <div class="story-copy">
+    <div class="num">01 — Uma pequena lembrança</div>
+    <h2>A vida não cabe em um número</h2>
+    <p>Jennifer, mesmo tendo a mesma idade que você, ainda assim enxergo a vida de um modo que não pode ser definido por um número — o que chega a ser irônico, já que gosto de programação.</p>
+    <p>A vida, de fato, pode ser extremamente difícil de viver. Mas isso não significa que a felicidade precise nascer do sofrimento. As vitórias têm valor por si mesmas, e os momentos simples também podem ser preciosos sem que antes tenhamos precisado sofrer.</p>
+  </div>
+  <div class="story-art"><span class="stars">✧　　♡　　✦<br>　✦　　✧　　♡</span><span class="art-emoji">🎁</span><div class="art-caption">Às vezes, o que importa cabe nas coisas pequenas.</div></div>
+</section>
+
+<section class="story dark">
+  <div class="story-art night"><span class="stars">✦　　✧　　✦<br>　♡　　✦　　✧</span><span class="art-emoji">🌙</span><div class="art-caption">Você continua sendo você, mesmo depois de dias difíceis.</div></div>
+  <div class="story-copy">
+    <div class="num">02 — O peso de crescer</div>
+    <h2>O que vivemos não é tudo o que somos</h2>
+    <p>As dificuldades, os obstáculos e as dores não definem por completo como será nossa vivência, muito menos a pessoa que somos.</p>
+    <p>Ao longo do nosso crescimento, conforme vivemos em sociedade, nossos princípios e nosso caráter vão sendo moldados pelas circunstâncias e situações que enfrentamos. Às vezes, isso faz com que nossa visão do mundo se torne mais cautelosa, até um pouco amarga.</p>
+    <p>Não temos culpa de tudo o que nos acontece. Mas, aos poucos, podemos escolher o que fazer com aquilo que vivemos: aprender a nos proteger sem deixar de reconhecer o que ainda existe de bonito nas pessoas e no mundo.</p>
+  </div>
+</section>
+
+<section class="story">
+  <div class="story-copy">
+    <div class="num">03 — Aquilo que ainda existe em você</div>
+    <h2>Não deixe de se encantar</h2>
+    <p>Quando somos crianças, reagimos de forma espontânea ao que vemos e sentimos, antes mesmo de compreender todos os conceitos de certo e errado que aprendemos ao crescer.</p>
+    <p>Com o tempo, a vida nos ensina limites, responsabilidades e maneiras de nos proteger. Isso faz parte de amadurecer. Só espero que, no meio de tudo isso, você nunca sinta que precisa abandonar a sua espontaneidade para se tornar adulta.</p>
+    <p>Eu vejo essa doçura quando seus olhos brilham diante de um ursinho de pelúcia, quando você deseja um chocolate ou quando ri de forma sincera. São momentos pequenos, mas que me mostram uma alegria genuína que merece continuar tendo espaço na sua vida.</p>
+  </div>
+  <div class="story-art flowers"><span class="stars">♡　✧　♡<br>　✦　♡　✧</span><span class="art-emoji">🧸</span><div class="art-caption">Doce, adorável, gentil, engraçada e única.</div></div>
+</section>
+
+<section class="story dark">
+  <div class="story-art night"><span class="stars">✧　✦　✧<br>♡　　✦　　♡</span><span class="art-emoji">💫</span><div class="art-caption">Você ainda tem tanta coisa bonita pela frente.</div></div>
+  <div class="story-copy">
+    <div class="num">04 — Uma carta para levar consigo</div>
+    <h2>Continue florescendo, meu bem</h2>
+    <p>Hoje você faz 20 anos. É uma nova fase, sim. Tudo pode ser diferente, mas não tenha medo de crescer nem feche os olhos para as possibilidades que a vida ainda pode te oferecer.</p>
+    <p>Independentemente do que acontecer, lembre-se da mulher forte e sábia que você tem se tornado. Você não precisa ter todas as respostas agora, nem carregar tudo sozinha. Pode pedir ajuda, descansar, mudar de ideia e recomeçar.</p>
+    <p>Espero que você continue encontrando motivos para sorrir, sem precisar fingir que os dias difíceis não existem. Que aprenda a se cuidar sem se fechar para o mundo e que nunca confunda amadurecer com deixar de sentir.</p>
+  </div>
+</section>
+
+<section class="letter-wrap" id="carta">
+  <article class="letter">
+    <h2>Uma última coisinha, meu amor…</h2>
+    <p>Quero que você entenda e guarde na mente que, independentemente do que viva ou presencie, você continua sendo muito mais do que as circunstâncias que atravessa. Você pode aprender com o que dói sem permitir que isso apague tudo aquilo que te faz bem.</p>
+    <p>Não é preciso sofrer para merecer a felicidade, nem conquistar grandes coisas para ter o direito de aproveitar a vida. Às vezes, ela também está no chocolate que você queria, no abraço que chega na hora certa, na risada espontânea e na paz de poder ser você mesma.</p>
+    <p>Meu bem, eu espero que você nunca deixe que as dificuldades te façam esquecer essas pequenas coisas. Que você se permita viver, descobrir, errar, aprender e continuar sonhando. Que tenha coragem para proteger seu coração, mas também liberdade para deixá-lo se encantar.</p>
+    <p>Que os teus 20 anos sejam o começo de muitas descobertas, conquistas, lugares bonitos, sonhos realizados e momentos felizes. E, acima de tudo, que você continue se tornando a mulher que deseja ser sem perder a menina doce, adorável, gentil e engraçada que eu tenho a sorte de conhecer.</p>
+    <p>Você não estará sozinha em todos os momentos. E, quando precisar se lembrar da força que tem, espero que consiga olhar para si mesma com a mesma ternura com que olha para as pequenas coisas que ama.</p>
+    <p class="signature">Com amor e carinho,<br>seu “miguézinho”. ♡</p>
+    <div class="letter-end">FELIZ 20 ANOS, MEU BEM ♡</div>
+  </article>
+</section>
+</main>
+<footer>Feito com carinho, chocolates imaginários e um montão de afeto. ♡</footer>
+<div id="toast" role="status" aria-live="polite">Uma lembrança guardada com carinho ♡</div>
+<script>
+document.querySelectorAll('.gift-card').forEach(card=>{
+  card.addEventListener('click',()=>{
+    const opened=card.classList.toggle('open');
+    card.setAttribute('aria-expanded',String(opened));
+  });
+});
+const toast=document.getElementById('toast');
+document.querySelectorAll('nav a, .btn').forEach(link=>{
+  link.addEventListener('click',()=>{
+    if(link.getAttribute('href')==='#carta'){
+      toast.textContent='Sua cartinha está esperando por você ♡';
+      toast.classList.add('show');
+      setTimeout(()=>toast.classList.remove('show'),2200);
+    }
+  });
+});
+</script>
+</body>
+</html>
